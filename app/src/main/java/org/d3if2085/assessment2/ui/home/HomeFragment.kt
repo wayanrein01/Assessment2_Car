@@ -53,6 +53,10 @@ class HomeFragment : Fragment() {
                 findNavController().navigate(R.id.action_homeFragment_to_historiFragment)
                 return true
             }
+            R.id.menu_list -> {
+                findNavController().navigate(R.id.action_homeFragment_to_mainListFragment)
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }

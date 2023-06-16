@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="org.d3if2085.assessment2.ui.login.LoginFragment"
-        android:label="fragment_login"
+        android:label="Login"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="org.d3if2085.assessment2.ui.register.RegisterFragment"
-        android:label="fragment_register"
+        android:label="Register"
         tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="org.d3if2085.assessment2.ui.home.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_addFragment"
@@ -44,6 +44,9 @@
         <action
             android:id="@+id/action_homeFragment_to_historiFragment"
             app:destination="@id/historiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mainListFragment"
+            app:destination="@id/mainListFragment" />
 
     </fragment>
     <fragment
@@ -78,5 +81,10 @@
             android:defaultValue="-1L"
             app:argType="long" />
     </fragment>
+    <fragment
+        android:id="@+id/mainListFragment"
+        android:name="org.d3if2085.assessment2.ui.listcar.MainListFragment"
+        android:label="Daftar Mobil"
+        tools:layout="@layout/fragment_list_mobil"/>
 
 </navigation>

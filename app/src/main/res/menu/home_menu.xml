@@ -7,4 +7,11 @@
         android:icon="@drawable/baseline_history_24"
         android:title="@string/histori"
         app:tint="@color/white"/>
+
+    <item
+        android:id="@+id/menu_list"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/view_list"
+        android:title="@string/list_mobil"
+        app:tint="@color/white"/>
 </menu>
