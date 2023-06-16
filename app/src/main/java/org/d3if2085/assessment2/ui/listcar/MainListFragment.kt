@@ -67,6 +67,8 @@ class MainListFragment : Fragment() {
         viewModel.getStatus().observe(viewLifecycleOwner) {
             updateProgress(it)
         }
+
+        viewModel.scheduleUpdater(requireActivity().application)
     }
 
     private fun setLayout() {
